@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_resume/static/css/main.ae23a32c.css",
+    "main.js": "/react_resume/static/js/main.10a145b2.js",
+    "index.html": "/react_resume/index.html",
+    "main.ae23a32c.css.map": "/react_resume/static/css/main.ae23a32c.css.map",
+    "main.10a145b2.js.map": "/react_resume/static/js/main.10a145b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae23a32c.css",
+    "static/js/main.10a145b2.js"
+  ]
+}
