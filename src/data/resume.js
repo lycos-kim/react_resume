@@ -1,9 +1,9 @@
 export const header = {
     name: "김수현",
     desc: "풀스택 개발자 15년차",
-    email: "",
+    email: "shiny3sky@naver.com",
     github: "https://lycos-kim.github.io/",
-    blog: "https://",
+    blog: "",
 };
 
 export const intro = {
