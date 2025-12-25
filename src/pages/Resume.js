@@ -1,7 +1,7 @@
 import { Component } from "react";
-import { header, intro, skills, main, footer } from "../resume";
+import { header, intro, skills, main, footer } from "../data/resume";
 import { Header, Intro, Skills, Main, Footer } from "../components/index"
-import styles from "../styles.module.scss"
+import styles from "../styles/styles.module.scss"
 
 class Resume extends Component {
     render() {

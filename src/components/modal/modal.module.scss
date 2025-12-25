@@ -1,4 +1,4 @@
-@import '../../mixin.module.scss';
+@import '../../styles/mixin.module.scss';
 
 $ratio: 1.2;
 
@@ -67,6 +67,7 @@ svg {
             img {
                 user-select: none;
                 height: 100%;
+                width: 85%;
             }
         }
         footer {

@@ -1,12 +1,14 @@
 import { Component } from "react";
+import { getPdfPath } from '../utils/paths';
 
 class PDFViewer extends Component {
     render() {
-        const pdf = `${process.env.PUBLIC_URL}/projects/${this.props.match.params.folder}/${this.props.match.params.pdf}`
+        const { folder, pdf } = this.props.match.params;
+        const pdfPath = getPdfPath(folder, pdf);
 
         return (
             <div>
-                <embed src={pdf} type="application/pdf" />
+                <embed src={pdfPath} type="application/pdf" />
             </div>
         );
     }

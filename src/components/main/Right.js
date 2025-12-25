@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from '../modal/Modal';
-import styles from '../../styles.module.scss';
+import styles from '../../styles/styles.module.scss';
+import { getProjectImagePath, getPdfViewerPath } from '../../utils/paths';
 
 class Right extends Component {
     constructor(props) {
@@ -33,13 +34,30 @@ class Right extends Component {
             return <li key={index}>{desc.main}</li>
         })
         const keywords = content.keywords.map((keyword, index) => <span key={index}>{keyword}</span>)
-        const images = content.images.map((image, index) => <img key={index} onClick={() => this.controlModal(index)} src={`${process.env.PUBLIC_URL}/projects/${content.folder}/${image}`} alt="alt_image" />)
+        const images = content.images.map((image, index) => (
+            <img 
+                key={index} 
+                onClick={() => this.controlModal(index)} 
+                src={getProjectImagePath(content.folder, image)} 
+                alt="alt_image" 
+            />
+        ))
         const pdfs = content.pdfs.map((pdf, index) => {
-            const thumbnail = <img src={`${process.env.PUBLIC_URL}/projects/${content.folder}/${pdf.thumbnail}`} alt="alt_pdf" />
-            if (window.location.hostname === "localhost") {
-                return <Link key={index} to={`pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank">{thumbnail}</Link>
-            }
-            return <Link key={index} to={`*/pdfviewer/${content.folder}/${pdf.pdf}`} target="_blank">{thumbnail}</Link>
+            const thumbnail = (
+                <img 
+                    src={getProjectImagePath(content.folder, pdf.thumbnail)} 
+                    alt="alt_pdf" 
+                />
+            )
+            return (
+                <Link 
+                    key={index} 
+                    to={getPdfViewerPath(content.folder, pdf.pdf)} 
+                    target="_blank"
+                >
+                    {thumbnail}
+                </Link>
+            )
         })
 
         return (

@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Box from './Box';
-import styles from '../../styles.module.scss';
+import styles from '../../styles/styles.module.scss';
 
 class Wrapper extends Component {
     render() {

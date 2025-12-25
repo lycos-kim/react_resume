@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Left from './Left';
 import Right from './Right';
-import styles from '../../styles.module.scss';
+import styles from '../../styles/styles.module.scss';
 
 class Wrapper extends Component {
     render() {
