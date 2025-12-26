@@ -24,8 +24,8 @@ export const skills = {
         {
             category: "Frontend",
             desc: [
-                { name: "JavaScript", proficiency: 70 },
-                { name: "jQuery", proficiency: 70 },
+                { name: "JavaScript", proficiency: 80 },
+                { name: "jQuery", proficiency: 80 },
                 { name: "HTML5 Canvas", proficiency: 80 },
                 { name: "WebAssembly", proficiency: 60 },
                 { name: "Nexacro", proficiency: 90 },
@@ -35,21 +35,14 @@ export const skills = {
         {
             category: "Backend",
             desc: [
-                { name: "Spring", proficiency: 60 },
-                { name: "Spring Boot", proficiency: 30 },
-                { name: "", proficiency: 40 },
-                { name: "C++", proficiency: 45 },
-                { name: "JAVA", proficiency: 30 },
-                { name: "Devon", proficiency: 50 }
+                { name: "Spring", proficiency: 90 },
+                { name: "Spring Boot", proficiency: 40 },
+                { name: "C++", proficiency: 50 },
+                { name: "JAVA", proficiency: 90 },
+                { name: "Devon", proficiency: 70 },
+                { name: "eGovFrame", proficiency: 80 },
             ]
-        },
-        {
-            category: "DevOps",
-            desc: [
-                { name: "MySQL", proficiency: 40 },
-                { name: "MySQL", proficiency: 40 }
-            ]
-        },
+        }
     ],
 };
 
